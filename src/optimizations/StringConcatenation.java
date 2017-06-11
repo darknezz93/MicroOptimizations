@@ -20,4 +20,14 @@ public class StringConcatenation extends Experiment {
             out.append(i);
         }
     }
+
+    public static void main(String[] args) {
+        String arg = args.length > 0 ? args[0] : "";
+        Experiment experiment = new StringConcatenation();
+        if ("1".equals(arg)) {
+            experiment.afterOptimization();
+        } else {
+            experiment.beforeOptimization();
+        }
+    }
 }

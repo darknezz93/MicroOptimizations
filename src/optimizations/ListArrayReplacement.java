@@ -28,4 +28,13 @@ public class ListArrayReplacement extends Experiment {
         }
     }
 
+    public static void main(String[] args) {
+        String arg = args.length > 0 ? args[0] : "";
+        Experiment experiment = new ListArrayReplacement();
+        if ("1".equals(arg)) {
+            experiment.afterOptimization();
+        } else {
+            experiment.beforeOptimization();
+        }
+    }
 }

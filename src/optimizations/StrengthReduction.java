@@ -22,4 +22,14 @@ public class StrengthReduction extends Experiment {
             result2 = 1000 << 1; // * 2
         }
     }
+
+    public static void main(String[] args) {
+        String arg = args.length > 0 ? args[0] : "";
+        Experiment experiment = new StrengthReduction();
+        if ("1".equals(arg)) {
+            experiment.afterOptimization();
+        } else {
+            experiment.beforeOptimization();
+        }
+    }
 }

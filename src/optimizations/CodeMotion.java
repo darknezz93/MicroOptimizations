@@ -22,4 +22,14 @@ public class CodeMotion extends Experiment {
             result = Math.PI * cos;
         }
     }
+
+    public static void main(String[] args) {
+        String arg = args.length > 0 ? args[0] : "";
+        Experiment experiment = new CodeMotion();
+        if ("1".equals(arg)) {
+            experiment.afterOptimization();
+        } else {
+            experiment.beforeOptimization();
+        }
+    }
 }

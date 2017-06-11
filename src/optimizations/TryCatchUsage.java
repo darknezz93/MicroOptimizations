@@ -9,8 +9,8 @@ public class TryCatchUsage extends Experiment {
 
     @Override
     public void beforeOptimization() {
-        for(int i = 0; i < ITERATIONS; i++) {
-            if(object != null) {
+        for (int i = 0; i < ITERATIONS; i++) {
+            if (object != null) {
                 temp = 2 * 2;
             }
         }
@@ -18,10 +18,21 @@ public class TryCatchUsage extends Experiment {
 
     @Override
     public void afterOptimization() {
-        for(int i = 0; i < ITERATIONS; i++) {
+        for (int i = 0; i < ITERATIONS; i++) {
             try {
                 temp = 2 * 2;
-            } catch(Exception e) {}
+            } catch (Exception e) {
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        String arg = args.length > 0 ? args[0] : "";
+        Experiment experiment = new TryCatchUsage();
+        if ("1".equals(arg)) {
+            experiment.afterOptimization();
+        } else {
+            experiment.beforeOptimization();
         }
     }
 }

@@ -5,7 +5,7 @@ public class CodeMotion extends Experiment {
 
     public double result;
 
-    private static final int ITERATIONS = 100;
+    private static final int ITERATIONS = 10000000;
     private static final double CONSTANT = 1;
 
     @Override

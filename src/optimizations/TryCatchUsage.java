@@ -3,7 +3,7 @@ package optimizations;
 
 public class TryCatchUsage extends Experiment {
 
-    private static final int ITERATIONS = 10000;
+    private static final int ITERATIONS = 1000000000;
     private Casting object = new Casting();
     int temp;
 

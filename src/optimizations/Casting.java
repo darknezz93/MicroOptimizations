@@ -3,7 +3,7 @@ package optimizations;
 
 public class Casting extends Experiment {
 
-    private static final int ITERATIONS = 10000;
+    private static final int ITERATIONS = 1000000000;
     int temp;
 
     @Override

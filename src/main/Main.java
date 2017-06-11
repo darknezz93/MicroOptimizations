@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         prepareExperiment();
-        executeExperiments();
+        executeExperiment();
     }
 
     private static void prepareExperiment() {
@@ -26,7 +26,7 @@ public class Main {
         experiments.add(new Casting());
     }
 
-    private static void executeExperiments() {
+    private static void executeExperiment() {
         for(Experiment experiment: experiments) {
             experiment.execute();
         }

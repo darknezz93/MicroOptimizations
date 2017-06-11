@@ -6,7 +6,7 @@ import java.util.List;
 
 public class ListArrayReplacement extends Experiment {
 
-    private static final int ITERATIONS = 10000;
+    private static final int ITERATIONS = 100000;
 
     private List<Integer> list = new ArrayList();
     private int[] array = new int[ITERATIONS];

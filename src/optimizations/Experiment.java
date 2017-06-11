@@ -31,6 +31,18 @@ public abstract class Experiment {
         System.out.println("\n");
     }
 
+    public void executeBeforeOptimizationJMC() {
+        s.nextLine();
+        beforeOptimization();
+        s.nextLine();
+    }
+
+    public void executeAfterOptimizationJMC() {
+        s.nextLine();
+        afterOptimization();
+        s.nextLine();
+    }
+
     public abstract void beforeOptimization();
 
     public abstract void afterOptimization();
